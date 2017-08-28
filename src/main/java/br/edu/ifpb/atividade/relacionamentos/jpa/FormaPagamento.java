@@ -9,6 +9,7 @@ package br.edu.ifpb.atividade.relacionamentos.jpa;
  *
  * @author miolivc
  */
+
 public class FormaPagamento {
     
 }

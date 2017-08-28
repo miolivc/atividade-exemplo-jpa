@@ -5,7 +5,11 @@
  */
 package br.edu.ifpb.atividade.relacionamentos.jpa;
 
+import java.io.Serializable;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -13,8 +17,10 @@ import java.util.List;
  */
 
 @Entity
-public class GrupoProduto {
+public class GrupoProduto implements Serializable {
     
+    @Id
+    private int id;
     @OneToMany
     private List<Produto> produtos;
     
